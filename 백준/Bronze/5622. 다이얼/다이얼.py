@@ -9,7 +9,5 @@ W, X, Y, Z = map(int, [10, 10, 10, 10])
 
 
 n = input()
-time = []
-for i in range(len(n)):
-    time.append(eval(n[i]))
-print(sum(time))
+ans = list(map(eval, n))
+print(sum(ans))
