@@ -1,10 +1,6 @@
 import sys
 
 n = int(input())
-arr = []
-for _ in range(n) : 
-    input = int(sys.stdin.readline())
-    arr.append(input)
+arr = [int(sys.stdin.readline()) for i in range(n)]
 arr.sort()
-
-print(*arr, sep='\n')
+print(*arr, sep='\n') 
